@@ -1,0 +1,246 @@
+.leaflet-control-zoom,
+.leaflet-bar,
+.leaflet-control {
+  display: none;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #2d2828;
+  color: #fff;
+}
+
+.leaflet-popup-content {
+  width: inherit;
+}
+
+#slide-in {
+  position: absolute;
+  width: 250px;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #fff;
+  margin-left: -290px;
+  transition: 1.5s;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+#slide-in.in {
+  margin-left: -8px;
+}
+
+#menuIcon {
+  position: absolute;
+  padding: 10px;
+  margin: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("img/arr.svg");
+  background-size: cover;
+  z-index: 10000;
+  transition: 1.5s;
+  display: none;
+  margin-top: 100px;
+}
+
+#menuIcon.out {
+  transform: rotate(180deg);
+  transition: 1.5s;
+  margin-left: 270px;
+}
+
+.imageContainer {
+  margin: 10px;
+  width: 90%;
+  background-color: lightgrey;
+  height: 200px;
+}
+
+.st0 {
+  background-image: url("img/oldPigTrain.jpg");
+  background-size: cover;
+}
+
+.st1 {
+  background-image: url("img/naerum.jpg");
+  background-size: cover;
+}
+
+.st2 {
+  background-image: url("img/ravnholm01.jpeg");
+  background-size: cover;
+}
+
+.st3 {
+  background-image: url("img/ør.jpg");
+  background-size: cover;
+}
+
+.st4 {
+  background-image: url("img/Brede.jpg");
+  background-size: cover;
+}
+
+.st5 {
+  background-image: url("img/Fuglevad.jpeg");
+  background-size: cover;
+}
+
+.st6 {
+  background-image: url("img/Lyngby_Lokal.jpeg");
+  background-size: cover;
+}
+
+.st7 {
+  background-image: url("img/Nørgaardsvej_Station.jpeg");
+  background-size: cover;
+}
+
+.st8 {
+  background-image: url("img/Jægersborg.jpg");
+  background-size: cover;
+}
+
+#bntDepartures {
+  margin: 10px;
+  padding: 6px;
+  background-color: #56b54ab8;
+  border-radius: 7px;
+  display: block;
+  width: -webkit-fill-available;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#nearby {
+  margin: 10px;
+  padding: 6px;
+  background-color: #56b54ab8;
+  border-radius: 7px;
+  display: block;
+  width: -webkit-fill-available;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.routes {
+  position: absolute;
+  z-index: 1000;
+  padding: 10px;
+  right: 0;
+  background-color: #f4f4f4;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px grey;
+  min-height: 100px;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+}
+
+.text-route {
+  margin: 2px;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
+.btnRoute {
+  margin: 10px;
+  padding: 6px;
+  background-color: #56b54ab8;
+  border-radius: 7px;
+  display: block;
+  width: -webkit-fill-available;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1000;
+  padding: 20px;
+  right: 0;
+  background-color: #f4f4f4;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px grey;
+  min-height: 100px;
+  width: 250px;
+  height: 90vh;
+  word-spacing: 2px;
+
+  overflow-x: hidden;
+  /* text-align: justify; */
+  text-justify: inter-word;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+.clock {
+  width: 20px;
+  position: absolute;
+  left: 127px;
+  margin-top: 5px;
+}
+
+.click {
+  letter-spacing: 2px;
+  background-color: yellow;
+}
+
+.btn-clicked {
+  background-color: #ec4747d4;
+}
+
+.active {
+  height: 250px;
+
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.active::-webkit-scrollbar {
+  width: 1em;
+}
+
+.active::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.active::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+body {
+  position: inherit;
+  overflow: hidden;
+}
+
+.content {
+  font-size: 20px;
+}
+
+.label {
+  z-index: 2000;
+  position: absolute;
+  padding: 10px;
+  width: 250px;
+  overflow: hidden;
+  background-color: #fff;
+  left: 0px;
+}
+
+.input {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+}

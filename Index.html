@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TrainWithGeoJson</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="myStyle.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <img
+        src="img/oldPigTrain.jpg"
+        alt=" old train on the Nærum Line "
+        width="100%"
+      />
+      <h1>Naerum line</h1>
+      <!-- <div class="clock"></div> -->
+
+      <p>
+        The 910 train (Direction: Jægersborg) has 8 stations from Nærum to
+        Jægersborg. The railway opened as Lyngby-Vedbæk railway in 1900 with an
+        aim of serving the industries that had settled in the Mølleå valley to
+        exploit the hydraulic power of the Mølleå.
+      </p>
+      <p>
+        Trains on the Nærum Line are operated by the railway company Lokaltog.
+        Despite being a single-track railway, Lokaltog operates an ambitious
+        timetable on the Nærum Line with a 20 minute frequency most of the day.
+      </p>
+      <h2 class="content">
+        Choose any of the 910 train stations by
+        <span class="click">CLICKING</span>on the icons on the map to find
+        updated real-time schedules.
+      </h2>
+    </div>
+    <div class="label">
+      <label>Station </label>
+      <input
+        id="station"
+        class="input"
+        type="text"
+        id="inputID"
+        placeholder="enter station name.."
+      />
+    </div>
+
+    <span id="menuIcon"></span>
+    <div id="slide-in">
+      <div class="imageContainer"></div>
+      <h2 id="station" class="heading">Display hour</h2>
+      <p>Train Stop</p>
+      <img
+        class="clock"
+        src="img/train-clock.svg"
+        alt="icon of Clock"
+        height="30px"
+      />
+      <div class="departure"></div>
+      <button id="nearby">Show nearby</button>
+      <button id="bntDepartures">Show all Schedule</button>
+
+      <div class="alldepartures "></div>
+    </div>
+    <div class="routes">
+      <h2 class="text-route">Select route</h2>
+      <button class="btnRoute nae-jae">Nærum - Jægersborg</button>
+      <button class="btnRoute jae-nae">Jægersborg - Nærum</button>
+    </div>
+    <div id="mapid"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
